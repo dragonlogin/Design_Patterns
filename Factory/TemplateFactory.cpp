@@ -85,19 +85,19 @@ public:
 
 };
 
-int main() {
-    shared_ptr<AbstractFactory<Shoes>> factory = make_shared<ConcreteFactory<Shoes, NiKeShoes>>();
-    shared_ptr<AbstractFactory<Clothe>> fclothe = make_shared<ConcreteFactory<Clothe, NiKeClothe>>();
-
-    shared_ptr<Shoes> shoes = factory->Create();
-    shared_ptr<Clothe> clothe = fclothe->Create();
-    shoes->Show();
-    clothe->Show();
-
-    // 新加
-    shared_ptr<AbstractFactory<Pen>> fpen = make_shared<ConcreteFactory<Pen, ConcretePen>>();
-    shared_ptr<Pen> pen = fpen->Create();
-    pen->show();
-
-    return 0;
-}
+//int main() {
+//    shared_ptr<AbstractFactory<Shoes>> factory = make_shared<ConcreteFactory<Shoes, NiKeShoes>>();
+//    shared_ptr<AbstractFactory<Clothe>> fclothe = make_shared<ConcreteFactory<Clothe, NiKeClothe>>();
+//
+//    shared_ptr<Shoes> shoes = factory->Create();
+//    shared_ptr<Clothe> clothe = fclothe->Create();
+//    shoes->Show();
+//    clothe->Show();
+//
+//    // 新加
+//    shared_ptr<AbstractFactory<Pen>> fpen = make_shared<ConcreteFactory<Pen, ConcretePen>>();
+//    shared_ptr<Pen> pen = fpen->Create();
+//    pen->show();
+//
+//    return 0;
+//}
