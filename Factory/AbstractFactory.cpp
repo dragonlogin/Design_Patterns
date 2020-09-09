@@ -67,12 +67,12 @@ public:
         return make_shared<NiKeClothe>();
     }
 };
-
-int main() {
-    shared_ptr<Factory> factory = make_shared<NiKeProducer>();
-    shared_ptr<Shoes> shoes = factory->CreateShoes();
-    shared_ptr<Clothe> clothe = factory->CreateClothe();
-    shoes->Show();
-    clothe->Show();
-    return 0;
-}
+//
+//int main() {
+//    shared_ptr<Factory> factory = make_shared<NiKeProducer>();
+//    shared_ptr<Shoes> shoes = factory->CreateShoes();
+//    shared_ptr<Clothe> clothe = factory->CreateClothe();
+//    shoes->Show();
+//    clothe->Show();
+//    return 0;
+//}
