@@ -3,9 +3,8 @@
 //
 
 #include <bits/stdc++.h>
-
 using namespace std;
-//01 普通懒汉式单例 （ 线程不安全 ）
+//0２ 普通懒汉式单例 （ 线程安全 ）
 class Singleton1 {
 public:
     static shared_ptr<Singleton1> get_instance();
