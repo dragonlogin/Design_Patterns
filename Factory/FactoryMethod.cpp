@@ -51,17 +51,17 @@ class LiNingShoesFactory : public ShoesFactory {
     }
 };
 
-int main() {
-    shared_ptr<ShoesFactory> shoesfactory = make_shared<NiKeShoesFactory>();
-
-    auto p1 = shoesfactory->CreateShoes();
-    if (p1) {
-        p1->show();
-    }
-    shared_ptr<ShoesFactory> shoesfactory2 = make_shared<LiNingShoesFactory>();
-    auto p2 = shoesfactory2->CreateShoes();
-    if (p2) {
-        p2->show();
-    }
-    return 0;
-}
+//int main() {
+//    shared_ptr<ShoesFactory> shoesfactory = make_shared<NiKeShoesFactory>();
+//
+//    auto p1 = shoesfactory->CreateShoes();
+//    if (p1) {
+//        p1->show();
+//    }
+//    shared_ptr<ShoesFactory> shoesfactory2 = make_shared<LiNingShoesFactory>();
+//    auto p2 = shoesfactory2->CreateShoes();
+//    if (p2) {
+//        p2->show();
+//    }
+//    return 0;
+//}
