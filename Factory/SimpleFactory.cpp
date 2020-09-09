@@ -65,12 +65,12 @@ public:
     }
 };
 
-int main() {
-    ShoesFactory shoesfactory;
-
-    auto p1 = shoesfactory.CreateShoes(NIKE);
-    if (p1) {
-        p1->show();
-    }
-    return 0;
-}
+//int main() {
+//    ShoesFactory shoesfactory;
+//
+//    auto p1 = shoesfactory.CreateShoes(NIKE);
+//    if (p1) {
+//        p1->show();
+//    }
+//    return 0;
+//}
